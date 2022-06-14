@@ -1,0 +1,63 @@
+body{
+    height: 100%;
+}
+  .main{
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+ header{
+    display: flex;
+    justify-content: space-between;
+  }
+  h1{
+    float: left;
+    background-color: orange;
+    width:60%;
+    padding: 20px;
+    height: 258px;
+  }
+   nav{
+    float: right;
+    background-color: yellow;
+    width:30%;
+    padding: 20px;
+    height: 270px;
+ }
+ .wrapper{
+  grid-row-start: 1;
+  grid-row-end:   2;
+ }
+  aside{
+    float: left;
+    padding: 20px;
+    background-color: green;
+    height: 250px;
+    width: 40%;
+ }
+ 
+  article {
+    float: right;
+    padding: 10px;
+    width: 50%;
+    background-color: blue;
+    flex-direction: column;
+    height: 120px; /* only for demonstration, should be removed */
+  }
+  section {
+    float: right;
+    padding: 10px;
+    width: 50%;
+    background-color: blue;
+    margin-bottom: 20px;
+    height: 120px; /* only for demonstration, should be removed */
+  }
+  @media screen and (max-width: 375px) {
+    header{
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+ }
+  
